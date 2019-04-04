@@ -1,0 +1,28 @@
+header {
+    padding: 235px 0;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+.navigation {
+    background-color: #383e4c;
+    height: 78px;
+}
+
+.section1 {
+    background-color: #fff;
+    padding: 95px 0;
+}
+.param_block {
+    background: #F2F2F2;
+}
+.img_block {
+    background: #F2F2F2; 
+}
