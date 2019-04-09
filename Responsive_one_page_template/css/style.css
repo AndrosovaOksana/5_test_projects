@@ -163,8 +163,6 @@ p.pb {
     background: #E6E6E6 none repeat scroll 0 0;
 }
 
-
-
 /* Section3 */
 .service {
     margin: 124px 219px 85px;
@@ -184,4 +182,143 @@ p.pb {
 .parallax-services {
     min-height: 400px;
     background: transparent;
+}
+
+/* Section4 */
+.columns {
+    background: #F2F2F2;
+    height: 500px;
+    max-width: 260px;
+    margin: 0 auto 30px;
+}
+.columns h3 {
+    color: #666666;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.columns p {
+    padding: 10px 20px;
+    text-align: left;
+}
+.columns a {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    color: #666;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.bigImg {
+    background-color: #F2F2F2;
+    max-width: 1140px;
+    width: 100%;
+    
+}
+.bigImg-text {
+    padding: 30px;
+}
+.bigImg h2 {
+    color: #666666;
+    font-size: 20px;
+    font-weight: 700;
+}
+.bigImg p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+.bigImg a {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    color: #666;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Section5 */
+.section5 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.parallax-form {
+    min-height: 600px;
+    background: transparent;
+}
+.form-size {
+    max-width: 750px;
+}
+.contact h2 {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #333;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+.contact p {
+    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+    line-height: 1.6em;
+}
+.form-style-inputs {
+    border: none;
+    background: rgba(242, 242, 242, 0.4);
+}
+
+input {
+    margin-bottom: 15px;
+    height: 34px;
+}
+textarea {
+
+}
+
+
+/* Footer */
+.footer-text h2 {
+    color: #666;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.footer-text p {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-align: center;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.copy {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
