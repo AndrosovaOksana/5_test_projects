@@ -7,3 +7,7 @@ $('.parallax-services').parallax({
     speed: 0.2,
     bleed: -43.5
 });
+$('.parallax-form').parallax({
+    imageSrc: 'img/bg-3.jpg',
+    speed: 0.2
+});
