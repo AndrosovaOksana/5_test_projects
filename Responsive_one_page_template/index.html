@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Conquer</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    
+    
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#top_menu">
     <nav class="navbar navbar-expand-md fixed-top">
         <button class="navbar-toggler menu_btn" data-toggle="collapse" data-target="#top_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="top_menu">
-            <ul class="navbar-nav mx-auto menu">
-                <li><a href="#">Homepage</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">External</a></li>
+            <ul class="navbar-nav mx-auto menu" role="tablist">
+                <li><a href="#homeBlock" class="navButtons">Homepage</a></li>
+                <li><a href="#aboutBlock" class="navButtons">About Us</a></li>
+                <li><a href="#servicesBlock" class="navButtons">Services</a></li>
+                <li><a href="#contactBlock" class="navButtons">Contact</a></li>
+                <li><a href="" class="navButtons">External</a></li>
             </ul>
         </div>
     </nav>    
-    <header class="parallax-header">
+    <header class="parallax-header" id="homeBlock">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -38,7 +43,7 @@
             </div>
         </div>
     </header>
-    <section class="section1">
+    <section class="section1" id="aboutBlock">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -95,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="section3 parallax-services">
+    <section class="section3 parallax-services" id="servicesBlock">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -160,13 +165,13 @@
             </div>
         </div>
     </section>
-    <div class="section5 parallax-form">
+    <section class="section5 parallax-form" id="contactBlock">
         <div class="container form-size">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="contact">
                         <h2>contact form</h2>
-                        <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
+                        <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.<br> Etiam a mi quis arcu varius condimentum.</p>
                     </div>
                 </div>
             </div>
@@ -175,24 +180,24 @@
                     <form action="#">
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" class="form-control form-style-inputs" id="name" placeholder="Name">
-                                <input type="email" class="form-control form-style-inputs" id="email" aria-describedby="emailHelp" placeholder="Email">
-                                <input type="text" class="form-control form-style-inputs" id="subject" placeholder="Subject">
+                                <input type="text" class="form-control form-style" id="name" placeholder="Name">
+                                <input type="email" class="form-control form-style" id="email" aria-describedby="emailHelp" placeholder="Email">
+                                <input type="text" class="form-control form-style" id="subject" placeholder="Subject">
                             </div>
                             <div class="col">
-                                <textarea class="form-control form-style-inputs" id="comment" rows="6" placeholder="Your message here..."></textarea>
+                                <textarea class="form-control form-style" id="comment" rows="6" placeholder="Your message here..."></textarea>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn">Send</button>
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn form-style-btn">Send</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <footer>
         <div class="container">
             <div class="row">
@@ -213,11 +218,12 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <button id="toTopBtn" disabled></button>
+    <script src="js/scrollToView.js"></script>
+    <script src="js/scrollUp.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="libs/parallax.js-1.5.0/parallax.js"></script>
     <script src="js/parallax_scroll.js"></script>
+    
 </body>
 </html>
