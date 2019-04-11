@@ -185,6 +185,10 @@ p.pb {
 }
 
 /* Section4 */
+.section4 {
+    /* margin: 60px 0; */
+    margin-bottom: 60px;
+}
 .columns {
     background: #F2F2F2;
     height: 500px;
@@ -217,8 +221,12 @@ p.pb {
 .bigImg {
     background-color: #F2F2F2;
     max-width: 1140px;
-    width: 100%;
-    
+    width: 100%;   
+}
+.bigImg a:hover,
+.columns a:hover {
+    background: #E6E6E6 none repeat scroll 0 0;
+    color: #23527c;
 }
 .bigImg-text {
     padding: 30px;
@@ -278,19 +286,42 @@ p.pb {
     padding: 20px 15px;
     line-height: 1.6em;
 }
-.form-style-inputs {
+.form-style {
     border: none;
     background: rgba(242, 242, 242, 0.4);
 }
 
-input {
+input.form-style {
     margin-bottom: 15px;
     height: 34px;
 }
-textarea {
-
+textarea.form-style {
+    height: 132px;
 }
-
+input.form-style::placeholder, 
+textarea.form-style::placeholder {
+    color: #000;
+    font-size: 14px;
+}
+input.form-style:focus,
+textarea.form-style:focus {
+    background: rgba(242, 242, 242, 0.4);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); 
+}
+.form-style-btn {
+    background: #262628 none repeat scroll 0 0;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.form-style-btn:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
 
 /* Footer */
 .footer-text h2 {
@@ -321,4 +352,18 @@ hr {
     font-size: 12px;
     margin-bottom: 30px;
     margin-top: 10px;
+}
+
+/* ScrollUpButton */
+#toTopBtn {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px 20px;
+    background: transparent url(../img/top.png) no-repeat;
+    color: #fff;
+    border: none;
+    outline: none;
 }
